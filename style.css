@@ -51,9 +51,25 @@ body{
     }
     .swiper-button-next, .swiper-button-prev {
         display: none;
-        color: #ccc !important;
+        color: #fff !important;
     }
     :root {
         --swiper-navigation-size: 20px !important;
     }
+    .swiper-scrollbar-drag {
+        background: rgb(255 255 255) !important;
+    }
+    .banner{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.banner{
+    display: flex;
+}
+.banner-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
