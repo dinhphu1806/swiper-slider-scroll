@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <section class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img src="./img/photo-1.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-2.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-3.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-4.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-5.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-6.avif" alt="">
+            </div>
+            <div class="swiper-slide">
+                <img src="./img/photo-7.avif" alt="">
+            </div>
+        </div>
+        <!-- arrow -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+        <!-- pagination -->
+        <div class="swiper-pagination"></div>
+        <div class="swiper-scrollbar"></div>
+    </section>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        autoplay: true,
+        autoplayTimeout: 1000,
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        scrollbar: {
+          el: ".swiper-scrollbar",
+          hide: true,
+        },
+      });
+    </script>
+</body>
+</html>
