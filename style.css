@@ -49,4 +49,11 @@ body{
     .swiper-pagination{
         display: none;
     }
+    .swiper-button-next, .swiper-button-prev {
+        display: none;
+        color: #ccc !important;
+    }
+    :root {
+        --swiper-navigation-size: 20px !important;
+    }
 }
